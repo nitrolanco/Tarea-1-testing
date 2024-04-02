@@ -7,6 +7,10 @@ def greet(name):
         print(f'¡Buenos días {name}!')
     elif 12 <= current_hour < 20:
         print(f'¡Buenas tardes {name}!')
+
+def reverse_echo(input_str):
+    return input_str[::-1]
+
 def main():
     name = input("¡Hola! ¿Cómo te llamas? ")
     greet(name)
@@ -15,6 +19,8 @@ def main():
         if user_input.lower() == 'stop!':
             print(f'Adiós {name}!')
             break
+        else:
+            print(reverse_echo(user_input))
 
     return None
 
