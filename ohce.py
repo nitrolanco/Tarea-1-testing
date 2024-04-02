@@ -10,6 +10,12 @@ def greet(name):
 def main():
     name = input("¡Hola! ¿Cómo te llamas? ")
     greet(name)
+    while True:
+        user_input = input()
+        if user_input.lower() == 'stop!':
+            print(f'Adiós {name}!')
+            break
+
     return None
 
 if __name__=="__main__":
